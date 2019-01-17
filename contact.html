@@ -88,10 +88,15 @@
     <section class="contact_area section-gap">
         <div class="container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21262.806002117395!2d73.16522252792375!3d19.371449095945575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79999a52a4237%3A0x2f3e4d3906ac525a!2scybereak!5e0!3m2!1sen!2sus!4v1547121471286" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <div class="row">
+            <br>
+            <br><br>
+          <div class="row">
                 <div class="col-lg-3">
                     <div class="contact_info">
-                        <div class="info_item">
+
+
+                            <br>
+                            <br><div class="info_item">
                             <i class="lnr lnr-home"></i>
                             <h6>Padgha, Maharashtra ,India</h6>
                             <p>Office No: 06 Taqwa Manzil, Opp: Masjid–e-Taqwa , at Borivali, Post : Padgha Tal: Bhiwnadi, Dist:Thane, Maharashtra 421101, India</p>
@@ -108,9 +113,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="cognito">
+<script src="https://services.cognitoforms.com/s/HM6ZiCMMt0C3qcVkmt_2fg"></script>
+<script>Cognito.load("forms", { id: "2" });</script>
+</div>
+              <!--  <div class="col-lg-9">
                   <h2>Feel Free To Contact Us </h2>
-                    <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
+                    <form class="row contact_form"  method="post" name="submit-to-google-sheet"
                         novalidate="novalidate">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -132,7 +141,7 @@
                             <button type="submit" value="submit" class="primary-btn">Send Message</button>
                         </div>
                     </form>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -262,8 +271,20 @@
             </div>
         </div>
     </div>
-    <!--================End Contact Success and Error message Area =================-->
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+<script>
+      const scriptURL = '<SCRIPT URL>'
+      const form = document.forms['submit-to-google-sheet']
 
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
