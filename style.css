@@ -126,7 +126,7 @@ border-radius: 0.7em;
 	color:#fff;
 }
 .price-value,.price-value.two,.price-value.three {
-	background: #512884;
+	background: #4a9ef9;
 	padding: 2.8em 1.8em 2em;
 	border-bottom:2px solid#ffd500;
 	border-top-left-radius:0.7em;
@@ -232,13 +232,13 @@ box-shadow: 3px -4px 13px 3px rgba(0,0,0,0.75);
 	background:#f4f4f4;
 }
 .pricing-grid1:hover div.price-bg ul li a,.pricing-grid1:hover div.price-value h3 a{
- color:#512884;
+ color:#4a9ef9;
 }
 .pricing-grid2:hover div.price-bg ul li a,.pricing-grid2:hover div.price-value h3 a{
- color:#512884;
+ color:#4a9ef9;
 }
 .pricing-grid3:hover div.price-bg ul li a,.pricing-grid3:hover div.price-value h3 a{
-	color:#512884;
+	color:#4a9ef9;
 }
 .price-bg {
 	background: #fff;
