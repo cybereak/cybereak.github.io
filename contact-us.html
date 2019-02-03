@@ -91,20 +91,34 @@
             <br><br>
           <div class="row">
 
-              <div class="col-lg-12">
-                  <h2>Feel Free To Contact Us </h2>
+            <div class="col-lg-">
+                <h2>Feel Free To Contact Us </h2>
 
-                <div>  <form class="row contact_form"  action="https://formsapi.jabwn.com/key/wWJeEgU6dJhJGPzdkIPz" method="post">
-                  	<input type="hidden" name="_subject" value="New form submitted">
-                  	<input type="hidden" name="_replyto" value="%email">
-                  	<input type="hidden" name="_after" value="http://cybereak.com/thank-you.html">
-                  	<input type="text" name="name">
-                  	<input type="email" name="email">
+                      <div class="col-md-12">
+                          <form class="row contact_form"  action="https://formsapi.jabwn.com/key/wWJeEgU6dJhJGPzdkIPz"method="post"  >
+                            <input type="hidden" name="_subject" value="New form submitted">
+      <input type="hidden" name="_replyto" value="%email">
+      <input type="hidden" name="_after" value="http://cybereak.com/thank-you.html">
+                         <input type="text" class="form-control"  name="name" placeholder="Enter your name">
+                         <input type="text" class="form-control"  name="number" placeholder="Enter your number">
 
 
-                  	<input type="submit" value="Send">
-                  </form></div>
-                </div>
+                        <input type="email" class="form-control"  name="email" placeholder="Enter email address">
+                       <select name ="services">
+                         <option value="Nothing Selected">Select Service</option>
+ <option value="Graphic_Design">Graphic Design</option>
+ <option value="Web_Design">Web Design</option>
+ <option value="Digital_Marketing">Digital Marketing</option>
+ <option value="Explainer_Video">Explainer Video</option>
+</select>
+
+
+                              <textarea class="form-control" name="message"  rows="1" placeholder="Enter Message"></textarea>
+                              <input class="col-md-12 text-center primary-btn" type="submit" value="Send Message">
+                              </form>
+                          </div>
+                      </div>
+
             </div>
         </div>
     </section>

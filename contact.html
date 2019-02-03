@@ -117,22 +117,30 @@
                   <h2>Feel Free To Contact Us </h2>
 
                         <div class="col-md-10">
-                            <form class="row contact_form"  method="post" action="https://formsapi.jabwn.com/key/wWJeEgU6dJhJGPzdkIPz" >
-                          <input type="hidden" name="_subject" value="New form submitted">
-	                         <input type="hidden" name="_replyto" value="%email">
-                           <input type='hidden'class="form-control" name='redirect_to' value='https://cybereak.com/thank-you' />
+                            <form class="row contact_form"  action="https://formsapi.jabwn.com/key/wWJeEgU6dJhJGPzdkIPz"method="post"  >
+                              <input type="hidden" name="_subject" value="New form submitted">
+      	<input type="hidden" name="_replyto" value="%email">
+      	<input type="hidden" name="_after" value="http://cybereak.com/thank-you.html">
                            <input type="text" class="form-control"  name="name" placeholder="Enter your name">
                            <input type="text" class="form-control"  name="number" placeholder="Enter your number">
 
                           <input type="email" class="form-control"  name="email" placeholder="Enter email address">
-                          <input type="text" class="form-control"  name="subject" placeholder="Enter Subject">
+                          <select name ="services">
+                            <option value="Nothing Selected">Select Service</option>
+    <option value="Graphic_Design">Graphic Design</option>
+    <option value="Web_Design">Web Design</option>
+    <option value="Digital_Marketing">Digital Marketing</option>
+    <option value="Explainer_Video">Explainer Video</option>
+   </select>
 
-                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
-                                <input class="col-md-12 text-center primary-btn" type="submit" value="Send">
+
+                                <textarea class="form-control" name="message"  rows="1" placeholder="Enter Message"></textarea>
+                                <input class="col-md-12 text-center primary-btn" type="submit" value="Send Message">
+                                </form>
                             </div>
                         </div>
 
-                    </form>
+
                 </div>
             </div>
         </div>
