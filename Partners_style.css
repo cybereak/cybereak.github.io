@@ -101,5 +101,6 @@ border-top:1px solid rgb(51, 60, 64);
 border-bottom:1px solid rgb(25, 31, 34);
 }
 .title{
+  color:white;
   text-align: center;
 }
