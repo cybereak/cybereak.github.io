@@ -2406,8 +2406,7 @@ h6 {
     margin-top: 50px; } }
 
 .video-left {
-  background: url(../img/video-bg.jpg) no-repeat center;
-  background-size: cover;
+
   height: 350px;
   border-radius: 10px; }
   .video-left .play-btn {
